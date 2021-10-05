@@ -27,13 +27,16 @@ public class Repetição4 {
 		
 		while (cont < 150) {
 			
-			System.out.print("\n Digite a idade da pessoa: "); idade = sorteia.nextInt(100)+1;
+			System.out.print("\n Digite a idade da pessoa: "); idade = sorteia.nextInt(100)+1; System.out.printf("%d",idade);
 			
-			System.out.print("\n Digite o sexo: ");
-			System.out.println("\n 1) Feminino\n 2) Masculino\n 3) Outros\n Opção: "); sexo = sorteia.nextInt(3)+1;
+			System.out.print("\n Digite o sexo ");
+			System.out.print("\n 1) Feminino\n 2) Masculino\n 3) Outros "); sexo = sorteia.nextInt(3)+1;
+			System.out.println("\n Opção: "+sexo);
 			
-			System.out.print("\n Digite a Característica Psicológica: ");
-			System.out.print("\n 1) Calma\n 2) Nervosa\n 3) Agressiva\n Opção: "); carater = sorteia.nextInt(3)+1;
+			System.out.print(" Digite a Característica Psicológica: ");
+			System.out.print("\n 1) Calma\n 2) Nervosa\n 3) Agressiva"); carater = sorteia.nextInt(3)+1;
+			System.out.println("\n Opção: "+carater);
+			System.out.println();
 			
 			if (carater == 1) { pessoasCalmas++; }				// Contador pessoas calmas
 			if (sexo == 1 && carater == 2) { mulheresNerv++; }	// Contador mulheres nervosas
@@ -46,7 +49,7 @@ public class Repetição4 {
 			
 		}
 		
-		System.out.println("\n\n Número de PESSOAS CALMAS: "+pessoasCalmas);
+		System.out.println("\n Número de PESSOAS CALMAS: "+pessoasCalmas);
 		System.out.println(" Número de MULHERES NERVOSAS: "+mulheresNerv);
 		System.out.println(" Número de HOMENS AGRESSIVOS: "+homensAgr);
 		System.out.println(" Número de OUTROS CALMOS : "+outrosCalmos);
